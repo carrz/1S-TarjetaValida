@@ -22,7 +22,7 @@ function isValidCard(cardNumber) {
 		if (j % 2 === 0) {
 			result += cardNumberInv[j];
 		}	else {
-			if (cardNumberInv[j] * 2 > 10) {
+			if (cardNumberInv[j] * 2 >= 10) {
 				result += (cardNumberInv[j] * 2 - 10) + 1;
 			}	else {
 				result += (cardNumberInv[j] * 2);
